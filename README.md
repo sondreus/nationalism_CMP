@@ -1,7 +1,7 @@
 # nationalism_CMP
 Examining the prevalence of nationalism in party manifestos over time using the Comparative Manifesto Project data.
 
-The final report can be viewed [here](https://sdbock.github.io/nationalism_CMP/)
+The final report can be viewed [here](https://sdbock.github.io/nationalism_CMP/).
 # Included Files
 For replication, I suggest utilizing the Rproject workflow to keep file structure intact. 
 
