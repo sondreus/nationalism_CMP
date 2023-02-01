@@ -7,7 +7,7 @@ For replication, I suggest utilizing the Rproject workflow to keep file structur
 # Included Files
 
 ## `report.RMD` 
-This is an Rmarkdown file that generates the final report. Each of the included scripts (i.e., to load load and clean data, generate figures, etc.) are called within the document, such that compiling the document runs all required scripts (in the correct order). Note that compilation will fail without a Comparative Manifesto Project (CMP) API key placed within the project folder.
+This is an Rmarkdown file that generates the final report. Each of the included scripts (i.e., to load and clean data, generate figures, etc.) are called within the document, such that compiling the document runs all required scripts (in the correct order). Note that compilation will fail without a Comparative Manifesto Project (CMP) API key placed within the project folder.
 
 ## `get_data.R`
 Loads required packages and queries the CMP API for full dataset (via the `manifestoR` package). Stores data as .csv file. 
