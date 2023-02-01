@@ -1,0 +1,66 @@
+---
+# install.packages("rmdformats") for formatting
+title: "Prevelance of exclusionary nationalism across party manifestos, 1920-2021"
+author: 
+ - Sean Bock, Harvard University
+ 
+date: "`r Sys.Date()`"
+output:
+  rmdformats::downcute:
+    self_contained: true
+    thumbnails: true
+    lightbox: true
+    gallery: false
+    highlight: tango
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      warning = FALSE,
+                      message = FALSE
+                      )
+```
+
+# Nationalism measures
+
+The Comparative Manifesto Project (CMP) includes sets of content analytical variables. Each variable indicates the share of quasi-sentences in the respective category calculated as a fraction of the overall number of allocated codes per document. Below are selected measures related to exclusionary forms of nationalism. (See more on CMP [here](https://manifesto-project.wzb.eu/down/data/2020b/codebooks/codebook_MPDataset_MPDS2020b.pdf))
+
+-   **National way of life: Positive**
+
+    Favorable mentions of the manifesto country's nation, history, and general appeals. May include: Support for established national ideas; general appeals to pride of citizenship; appeals to patriotism; appeals to nationalism; suspension of some freedoms in order to protect the state against subversion.
+
+-   **Immigration: Negative**
+
+    Statement advocating the restriction of the process of immigration, i.e. accepting new immigrants. Might include statements regarding: Immigration being a threat to national character fo the manifesto country; \`the boat is full' argument; the introduction of migration quotas, including restricting immigration from specific countries or regions etc.
+
+-   **Law and Order: Positive**
+
+    Favorable mentions of strict law enforcement, and tougher actions against domestic crime. Only refers to the enforcement of the status quo of the manifesto country's law code. May include: Increasing support and resources for the police; tougher attitudes in courts; importance of internal security.
+
+-   **Multiculturalism: Negative**
+
+    The enforcement or encouragement of cultural integration. Appeals for cultural homogeneity in society
+
+-   **Nationalism Index**
+
+    To capture the overall level of exclusionary nationalism present in a given manifesto, we created an index, calculated as the sum of each nationalism variable. Items are normalized (i.e., between 0 and 1) before summing to weight each variable equally.
+
+# Results
+
+```{r get_data, include=FALSE, file="get_data.R"}
+```
+
+```{r cleaning_data, file="cleaning_data.R"}
+```
+
+<br>
+
+```{r plot_interactive, fig.height=7, fig.width=10, file = "plot_interactive.R"}
+
+```
+
+<br>
+<br>
+
+```{r table, file= "table_top50.R", paged.print=TRUE}
+```
