@@ -1,10 +1,9 @@
 # nationalism_CMP
 Examining the prevalence of nationalism in party manifestos over time using the Comparative Manifesto Project data.
 
-
-For replication, I suggest utilizing the Rproject workflow to keep file structure intact. 
-
+The final report can be viewed [here](https://sdbock.github.io/nationalism_CMP/)
 # Included Files
+For replication, I suggest utilizing the Rproject workflow to keep file structure intact. 
 
 ## `report.RMD` 
 This is an Rmarkdown file that generates the final report. Each of the included scripts (i.e., to load and clean data, generate figures, etc.) are called within the document, such that compiling the document runs all required scripts (in the correct order). Note that compilation will fail without a Comparative Manifesto Project (CMP) API key placed within the project folder.
